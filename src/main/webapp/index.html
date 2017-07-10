@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<h2>Hello springmvc!!</h2>
+
+	<script type="text/javascript">
+		var mydata = '{"name":"' + "杨成" + '","id":"' + 123 + '","status":"'
+				+ false + '"}';
+		$.ajax({
+			type : 'POST',
+			url : 'person.do',
+			data : {
+				name:"杨成"
+			},
+			dataType : 'json',
+			success : function(data) {
+				alert("id: " + data.id + "\nname: " + data.name + "\nstatus: "
+						+ data.status);
+			},
+			error : function() {
+				alert('Err...');
+			}
+		});
+	</script>
+
+
+</body>
+</html>

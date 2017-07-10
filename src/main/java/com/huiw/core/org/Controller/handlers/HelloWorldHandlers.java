@@ -61,7 +61,7 @@ public class HelloWorldHandlers {
 		json.get("user_name")+"\n提交备注："+
 		arraytojson.get("message")+"\n修改内容："+
 		arraytojson.get("url");
-		String token="ad3a0fd1e7d91fe19a289f1c4dd98d9648e7f5ded39a5b6d32fb79afd6c0eafd";
+		String token="xxxxxxxx";
 		content = "{\"msgtype\": \"text\",\"text\": {\"content\": \""+content+"\"},\"at\": {\"isAtAll\": true}}";  
 		httpsRequest("https://oapi.dingtalk.com/robot/send?access_token="+token, "POST", content);
 		System.out.println("OK");

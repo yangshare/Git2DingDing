@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.huiw.org.wis_org</groupId>
-	<artifactId>wis_org</artifactId>
+	<groupId>com.huiw.org.Git2DingDing</groupId>
+	<artifactId>Git2DingDing</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>wis_org Maven Webapp</name>
+	<name>Git2DingDing Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<!-- 参数配置 -->
@@ -125,7 +125,7 @@
 
 
 	<build>
-		<finalName>wis_org</finalName>
+		<finalName>Git2DingDing</finalName>
 		<plugins>
 			<!-- 配置Tomcat运行容器 -->
 			<!-- <plugin> <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> 
@@ -133,7 +133,7 @@
 				<goal>run</goal> </goals> </execution> </executions> </plugin> -->
 
 			<!-- 配置jetty运行容器 -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.2.2.v20140723</version>
@@ -142,10 +142,10 @@
 						<port>8080</port>
 						<host>localhost</host>
 					</httpConnector>
-					<!-- 设置起 ，每次保存自己更新class -->
-					<!-- <scanIntervalSeconds>1</scanIntervalSeconds> -->
+					设置起 ，每次保存自己更新class
+					<scanIntervalSeconds>1</scanIntervalSeconds>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 
